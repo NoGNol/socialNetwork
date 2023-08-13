@@ -1,0 +1,77 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.info_layout{
+    width: 700px;
+    height: 700px;
+ 
+}
+
+.space{
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;	
+    
+}
+
+.login_layout{
+    width: 500px;
+    height: 700px;
+    
+    border-radius: 12px;
+    background: #222222;
+
+    
+}
+.login_layout .authorizate{
+    
+    padding: 15px;
+    width: 400px;
+    height: 600px;
+    margin: 30px auto;
+    position: relative;
+    background: #222222;
+  
+}
+.authorizate_form{
+    margin-top: 200px;
+}
+
+.authorizate_form input, button{
+
+    height: 35px;
+    margin-bottom: 10px;
+    background: #2f2f2f;
+    border-radius: 12px;
+    display: block;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.847);
+    padding-left: 9%;
+    font-size: 18px;
+}
+
+
+.authorizate_form .signIn{
+    background: rgb(5, 180, 5);
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+.authorizate_form .signIn:hover{
+    background:black;
+}
+.authorizate_form .registrate{
+    background-color:#222222;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.authorizate_form .registrate:hover{
+    background:black;
+}
