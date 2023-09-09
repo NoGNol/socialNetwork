@@ -1,14 +1,13 @@
-import Authorization from "./pages/authorization/Authorization"
-import './App.css'
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+
+import "./App.css";
+import router from "./router/router";
 
 function App() {
-
-
   return (
-    <>
-      <Authorization/>
-    </>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
