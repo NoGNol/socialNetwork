@@ -6,4 +6,12 @@
 :root{
     background: black;
     color: white;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+    max-width: 70vw;
 }

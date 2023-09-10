@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AuthorizationPage.css";
+import Authorization from "../../componenst/authorization/Authorization";
 
-function AuthorizationPage() {
-  const [status, setStatus] = useState("");
-  const login = () => {
-    setStatus("login");
-  };
-
-  const registrate = () => {
-    setStatus("regist");
-  };
+const AuthorizationPage = () => {
 
   return (
-    <></>
+    <Authorization />
   );
-}
+};
 
 export default AuthorizationPage;

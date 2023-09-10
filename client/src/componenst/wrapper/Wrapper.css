@@ -1,0 +1,34 @@
+.wrapper{
+  height: 95vh;
+  width: 95vw;
+  /* display: flex; */
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  height: 5vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topNavUl{
+  display: flex;
+}
+
+.topNavUl li{
+  margin-left: 40px;
+}
+
+.leftNav{
+  position: fixed;
+  left: 5vw;
+  top: 5vh;
+  width: 12vw;
+}
+
+.leftNav li {
+  margin-top: 10px;
+}
