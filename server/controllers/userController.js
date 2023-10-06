@@ -3,9 +3,9 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const {User} = require('../models/models')
 
-const generateJwt = (id, email, role) =>{
+const generateJwt = (id, email, role, name, surname) =>{
     return jwt.sign(
-        {id, email, role}, 
+        {id, email, role, name, surname}, 
         process.env.SECRET_KEY, 
         {expiresIn: '24h'}
     )
@@ -22,8 +22,8 @@ class UserController {
             return next(ApiError.badRequest('Пользователь с таким email существует'))
         }
         const hashPassword = await bcrypt.hash(password, 5);
-        const user = await User.create({email, role, password: hashPassword})
-        const token = generateJwt(user.id, user.email, user.role)
+        const user = await User.create({email, role, password: hashPassword, name: "NAME", surname: "SURNAME"})
+        const token = generateJwt(user.id, user.email, user.role, user.name, user.surname)
         return res.json({token})
     }
 
